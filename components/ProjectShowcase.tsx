@@ -18,15 +18,15 @@ const projects: Project[] = [
     title: 'An Apple A Day (Hackathon Winner)',
     description: 'Won best video game at High Tech Hacks 2.0 hacakthon. A fast-paced Pygame game, built from scratch in 24 hours.',
     imageUrl: '/images/appleaday.png', // Make sure you have this image in your public folder
-    githubLink: 'https://github.com/yourusername/expense-tracker',
+    // githubLink: 'https://github.com/yourusername/expense-tracker',
     tags: ['Python', 'Pygame', 'Hackathon', 'Game Development', '1st Place'],
   },
   {
     title: 'FRC Robotics Programming Lead',
     description: 'Led the programming team for an inaugural FRC team, qualifying for the FIRST World Championship. I developed complex robot control systems in Java.',
     imageUrl: '/images/grover.webp', // Make sure you have this image in your public folder
-    liveLink: 'https://taskmanager.vercel.app',
-    githubLink: 'https://github.com/yourusername/task-manager-nextjs',
+    // liveLink: 'https://taskmanager.vercel.app',
+    // githubLink: 'https://github.com/yourusername/task-manager-nextjs',
     tags: ['Java', 'Leadership', 'Robotics', 'FRC Worlds'],
   },
   {
@@ -37,6 +37,7 @@ const projects: Project[] = [
     // githubLink: 'https://github.com/yourusername/my-portfolio',
     tags: ['Leadership', 'Teaching', 'Community', 'Hardware'],
   },
+
   // Add more projects as needed
 ];
 
