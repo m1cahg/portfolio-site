@@ -1,0 +1,32 @@
+/* components/ProjectShowcase.module.css */
+
+.showcase {
+  background-color: #282828; /* Same dark background as Hero */
+  padding: 6rem 2rem;
+  color: #EBDBB2;
+}
+
+.heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #B8BB26; /* Gruvbox green for section heading */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 2rem; /* Space between cards */
+  max-width: 1200px; /* Constrain grid width */
+  margin: 0 auto; /* Center the grid */
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .showcase {
+    padding: 4rem 1rem;
+  }
+}

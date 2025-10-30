@@ -1,0 +1,42 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(40, 40, 40, 0.85); /* Gruvbox dark with 85% opacity */
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
+  z-index: 100;
+
+  /* Subtle shadow for depth */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+
+  /* Optional: soft blur for floating effect */
+  backdrop-filter: blur(6px);
+}
+
+.navList {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: #EBDBB2; /* Gruvbox light cream */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #B8BB26; /* Gruvbox green accent on hover */
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .navList {
+    gap: 1rem;
+  }
+}

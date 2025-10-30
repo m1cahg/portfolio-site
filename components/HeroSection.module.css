@@ -1,0 +1,116 @@
+/* HeroSection.module.css */
+
+.hero {
+  /* Gruvbox Dark Background */
+  background-color: #282828;
+  color: #EBDBB2; /* Gruvbox Light Cream for text */
+
+  /* Padding to give it space */
+  padding: 8rem 2rem; /* Top/bottom 8rem, left/right 2rem */
+  height: 100vh; 
+
+  /* Flexbox for layout - this centers content vertically */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: flex-start; /* Left-align content horizontally */
+  position: relative; /* 1. Tells particles: "Anchor yourself to me!" */
+  overflow: hidden; /* 2. Tells particles: "You cannot escape my box!" */
+}
+
+.content {
+  max-width: 600px; /* Constrain content width for readability */
+  margin-left: 10%; /* Push content 10% from the left edge */
+  position: absolute; /* This ensures it sits on top */
+  z-index: 1; /* Sits on top of the particles */
+}
+
+.heading {
+  font-size: 4.5rem; /* Larger heading */
+  line-height: 1.1; /* Tighter line spacing */
+  margin-bottom: 1rem;
+  color: #EBDBB2; /* Ensure heading is the light cream */
+}
+
+.subheading {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #EBDBB2; /* Ensure subheading is the light cream */
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem; /* Space between buttons */
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-flex; /* CHANGE: This gives us flex powers */
+  align-items: center; /* NEW: This centers the text vertically */
+  justify-content: center; /* NEW: This centers the text horizontally */
+  
+  padding: 0.8rem 1.8rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  
+  /* Good to add this for future icon additions */
+  gap: 0.5rem; 
+}
+
+.primaryButton {
+  background-color: #B8BB26; /* Gruvbox Green Accent */
+  color: #282828; /* Dark text on green button */
+}
+
+.primaryButton:hover {
+  
+  background-color: #98971A; /* Slightly darker green on hover */
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: #B8BB26; /* Green border, green text */
+  border: 2px solid #B8BB26;
+}
+
+.secondaryButton:hover {
+  background-color: #B8BB26;
+  color: #282828;
+}
+
+.particleContainer {
+  position: absolute;
+  inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
+  width: 100%;
+  height: 100%;
+}
+
+.particleContainer > * {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 6rem 1rem;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+  .subheading {
+    font-size: 1.2rem;
+  }
+  .content {
+    margin-left: 0; /* Remove left margin on smaller screens */
+    max-width: none; /* Allow content to take full width */
+    text-align: center; /* Center text on mobile for better readability */
+  }
+  .buttonContainer {
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    align-items: center; /* Center stacked buttons */
+  }
+}

@@ -1,0 +1,54 @@
+/* components/Footer.module.css */
+
+.footer {
+  background-color: #282828; /* Main dark background */
+  color: #a89984; /* A muted Gruvbox text for less emphasis */
+  padding: 2rem 2rem;
+  /* Subtle border to separate from content above */
+  border-top: 1px solid #504945; 
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Copyright on left, links on right */
+  align-items: center;
+}
+
+.copyright {
+  font-size: 0.9rem;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.link {
+  color: #EBDBB2; /* Brighter cream for links */
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #B8BB26; /* Gruvbox green on hover */
+}
+
+/* Responsive: Stack on mobile */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column; /* Stack vertically */
+    gap: 1rem;
+  }
+
+  .copyright {
+    order: 2; /* Put copyright below links on mobile */
+  }
+
+  .links {
+    order: 1; /* Put links on top */
+  }
+}
