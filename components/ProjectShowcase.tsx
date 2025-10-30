@@ -8,7 +8,7 @@ interface Project {
   description: string;
   imageUrl: string;
   liveLink?: string;
-  githubLink: string;
+  githubLink?: string;
   tags: string[];
 }
 
